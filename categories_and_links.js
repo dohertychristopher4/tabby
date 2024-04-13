@@ -1,14 +1,21 @@
-// Data for categories and links
 let categoriesData = []
-fetchCategories = fetch('assets/categories_and_links.json')
-.then(response => response.json())
-.then(jsonData => {
-    categoriesData = jsonData
-    generateCategories()
+chrome.storage.local.get(['config'], result => {
+    if (result && result.config) {
+        categoriesData = result.config
+        generateCategories()
+    }
+    else {
+        fetchCategories = fetch('assets/categories_and_links.json')
+        .then(response => response.json())
+        .then(jsonData => {
+            categoriesData = jsonData
+            chrome.storage.local.set({'config': categoriesData}, () => {})
+            generateCategories()
+        })
+    }
 })
 
-// Function to generate links for a category
-function generateLinks(linksData) {
+const generateLinks = (linksData) => {
     const linksContainer = document.createElement("div")
     linksContainer.classList.add("links")
 
@@ -23,10 +30,8 @@ function generateLinks(linksData) {
     return linksContainer
 }
 
-// Function to generate categories
-function generateCategories() {
+const generateCategories = () => {
     const gridContainer = document.querySelector(".grid-container")
-
     categoriesData.forEach(categoryData => {
         const categoryElement = document.createElement("div")
         categoryElement.classList.add("category")

@@ -1,10 +1,21 @@
 {
-  "name": "Tabby",
-  "description": "Customize the new tab page",
-  "version": "0.1",
-  "incognito": "split",
-  "chrome_url_overrides": {
-    "newtab": "new_tab.html"
-  },
-  "manifest_version": 3
+    "manifest_version": 3,
+    "name": "Tabby",
+    "description": "Customize the new tab page",
+    "chrome_url_overrides": {
+      "newtab": "new_tab.html"
+    },
+    "version": "1.0",
+    "permissions": [
+      "storage",
+      "tabs", 
+      "activeTab"
+    ],
+    "incognito": "split",
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "icons": {
+      "16": "assets/icon32.png"
+  }
 }

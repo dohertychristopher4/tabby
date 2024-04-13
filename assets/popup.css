@@ -1,0 +1,25 @@
+#jsonConfig {
+    width: 500px;
+    height: 350px;
+    box-sizing: border-box;
+    margin: 20px;
+}
+
+#bottom-row {
+    position: fixed;
+    display: flex;
+    background: #fff;
+    bottom: 0;
+}
+
+#saveButton {
+    margin-right: 100px;
+}
+#resetDefaultButton {
+    position: fixed;
+    right: 10px;
+}
+
+#error {
+    color: red;
+}
