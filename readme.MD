@@ -16,3 +16,5 @@ Tabby is a browser extension that replaces your browser's default new tab page w
 ## Compatibility
 
 Tabby is compatible with Google Chrome.
+
+![Alt Text](/assets/tabby.png)
