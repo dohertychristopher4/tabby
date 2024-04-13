@@ -1,0 +1,10 @@
+{
+  "name": "Tabby",
+  "description": "Customize the new tab page",
+  "version": "0.1",
+  "incognito": "split",
+  "chrome_url_overrides": {
+    "newtab": "new_tab.html"
+  },
+  "manifest_version": 3
+}

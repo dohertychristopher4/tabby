@@ -1,0 +1,26 @@
+[
+    {
+        "category": "💼 Work",
+        "links": [
+            { "text": "ChatGPT 🤖", "url": "https://chat.openai.com" },
+            { "text": "Gmail 📧", "url": "https://gmail.com" },
+            { "text": "Outlook 📩", "url": "https://outlook.live.com/mail/0/" },
+            { "text": "LinkedIn 👔", "url": "https://linkedin.com" }
+        ]
+    },
+    {
+        "category": "📢 Social",
+        "links": [
+            { "text": "YouTube ▶️", "url": "https://www.youtube.com" },
+            { "text": "Twitter 🐤", "url": "https://www.x.com" }
+
+        ]
+    },
+    {
+        "category": "🛍️ Shopping",
+        "links": [
+            { "text": "Amazon 📦", "url": "https://www.amazon.co.uk" },
+            { "text": "Ebay 🛒", "url": "https://www.ebay.ie" }
+        ]
+    }
+]
