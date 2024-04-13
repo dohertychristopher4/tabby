@@ -7,10 +7,6 @@ fetchCategories = fetch('assets/categories_and_links.json')
     generateCategories()
 })
 
-fetchCategories.then(() => {
-    console.log('loading', categoriesData)
-})
-
 // Function to generate links for a category
 function generateLinks(linksData) {
     const linksContainer = document.createElement("div")
