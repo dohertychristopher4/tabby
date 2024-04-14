@@ -8,7 +8,6 @@
     "version": "1.0",
     "permissions": [
       "storage",
-      "tabs", 
       "activeTab"
     ],
     "incognito": "split",
